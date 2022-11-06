@@ -211,3 +211,23 @@ nav {
         margin-left: 2em;
     }
 }
+
+/* ABOUT ME */
+
+.about-me {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+@media (min-width: 600px) {
+    .about-me {
+        display: grid;
+        grid-template-columns: 1fr 200px;
+    }
+    .section-title-about, .section-subtitle-about {
+        grid-column: 1;
+    }
+    .about-me-img {
+        grid-row: 1 / -1;
+        grid-column: 2;
+}
