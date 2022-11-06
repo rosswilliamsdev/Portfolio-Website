@@ -223,11 +223,15 @@ nav {
     .about-me {
         display: grid;
         grid-template-columns: 1fr 200px;
+        grid-template-areas:
+        "title img"
+        "subtitle img"
+        "text img";
     }
-    .section-title-about, .section-subtitle-about {
-        grid-column: 1;
+    .section-title-about {
+        grid-area: title;
     }
     .about-me-img {
-        grid-row: 1 / -1;
-        grid-column: 2;
+        grid-area: img;
+}
 }
